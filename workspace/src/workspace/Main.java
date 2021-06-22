@@ -18,15 +18,21 @@ public class Main {
 		student.setStudentNumber("9999");
 		student.setLessonLearned("Java-React");
 		
-//		UserManager userManager = new UserManager();
-//		userManager.add(teacher);
-//		userManager.add(student);
+
 		
-		InstructorManager instructors = new InstructorManager();
-		instructors.addTeacher(teacher);
+//		InstructorManager instructors = new InstructorManager();
+//		instructors.addTeacher(teacher);
+//		
+//		StudentManager students = new StudentManager();
+//		students.addStudent(student);
 		
-		StudentManager students = new StudentManager();
-		students.addStudent(student);
+		UserManager userManager = new UserManager();
+		
+		User[] multi = {teacher,student};
+		
+		userManager.addMulti(multi);
+		
+		
 		
 
 	}
